@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -14,6 +14,10 @@
 
 	<ItemGroup>
 	  <Folder Include="Features\Languages\Constants\" />
+	  <Folder Include="Features\LanguageTechnologies\Constants\" />
+	  <Folder Include="Features\LanguageTechnologies\Rules\" />
+	  <Folder Include="Features\SocialMedias\Rules\" />
+	  <Folder Include="Features\SocialMedias\Queries\" />
 	</ItemGroup>
 
 	<ItemGroup>

@@ -1,4 +1,6 @@
-﻿namespace Core.Security.Dtos;
+﻿using System.Dynamic;
+
+namespace Core.Security.Dtos;
 
 public class UserForRegisterDto
 {
@@ -6,4 +8,5 @@ public class UserForRegisterDto
     public string Password { get; set; }
     public string FirstName { get; set; }
     public string LastName { get; set; }
+
 }

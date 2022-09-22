@@ -15,6 +15,8 @@ public class User : Entity
 
     public virtual ICollection<UserOperationClaim> UserOperationClaims { get; set; }
     public virtual ICollection<RefreshToken> RefreshTokens { get; set; }
+    public virtual ICollection<SocialMedia> SocialMedias { get; set; }
+
 
     public User()
     {
