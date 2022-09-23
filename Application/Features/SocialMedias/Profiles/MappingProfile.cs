@@ -7,7 +7,9 @@ using Application.Features.SocialMedias.Commands.CreateSocialMedia;
 using Application.Features.SocialMedias.Commands.DeleteSocialMedia;
 using Application.Features.SocialMedias.Commands.UpdateSocialMedia;
 using Application.Features.SocialMedias.Dtos;
+using Application.Features.SocialMedias.Queries.GetByIdQuey;
 using AutoMapper;
+using Core.Persistence.Paging;
 using Core.Security.Entities;
 
 namespace Application.Features.SocialMedias.Profiles
@@ -16,6 +18,8 @@ namespace Application.Features.SocialMedias.Profiles
     {
         public MappingProfile()
         {
+    
+
             CreateMap<SocialMedia, CreatedSocialMediaDto>().ReverseMap();
             CreateMap<SocialMedia, CreateSocialMediaCommand>().ReverseMap();
 
@@ -24,6 +28,11 @@ namespace Application.Features.SocialMedias.Profiles
 
             CreateMap<SocialMedia, DeletedSocialMediaDto>().ReverseMap();
             CreateMap<SocialMedia, DeleteSocialMediaCommand>().ReverseMap();
+
+            CreateMap<SocialMedia, GetByIdSocialMediaDto>().ReverseMap();
+            CreateMap<SocialMedia, GetByIdSocialMediaQuery>().ReverseMap();
+
+            
         }
     }
 }

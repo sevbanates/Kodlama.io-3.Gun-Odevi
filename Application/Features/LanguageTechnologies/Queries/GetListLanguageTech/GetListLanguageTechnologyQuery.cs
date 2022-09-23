@@ -38,6 +38,7 @@ namespace Application.Features.LanguageTechnologies.Queries.GetListLanguageTech
                 LanguageTechnologyListModel mappedLanguageTechnology =
                     _mapper.Map<LanguageTechnologyListModel>(languageTechs);
                 return mappedLanguageTechnology;
+                
             }
         }
     }

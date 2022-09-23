@@ -18,8 +18,7 @@ namespace Application.Features.LanguageTechnologies.Profiles
     {
         public MappingProfiles()
         {
-            CreateMap<IPaginate<LanguageTechnology>, LanguageTechnologyListModel>().ReverseMap();
-            CreateMap<LanguageTechnology, LanguageTechnologyListDto>().ReverseMap();
+     
 
             CreateMap<LanguageTechnology, CreatedLanguageTechnologyDto>().ReverseMap();
             CreateMap<LanguageTechnology, CreateLanguageTechnologyCommand>().ReverseMap();

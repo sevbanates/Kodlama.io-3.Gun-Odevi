@@ -2,6 +2,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
 using Application.Features.Languages.Rules;
+using Application.Features.SocialMedias.Rules;
 using Application.Features.Users.Rules;
 using Core.Application.Pipelines.Authorization;
 using Core.Application.Pipelines.Caching;
@@ -21,6 +22,7 @@ namespace Application
 
             services.AddScoped<LanguageBusinessRules>();
             services.AddScoped<UserBusinessRules>();
+            services.AddScoped<SocialMediaBusinessRules>();
 
             services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
             services.AddTransient(typeof(IPipelineBehavior<,>), typeof(AuthorizationBehavior<,>));
